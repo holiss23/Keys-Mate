@@ -3,6 +3,7 @@ import KeyIcon from "@/svg/key";
 import { getRedisClient } from "@/lib/redis";
 import crypto from "crypto";
 import Particle from "@/app/components/particle";
+export const dynamic = 'force-dynamic';
 export default async function keygen() {
   const redisClient = await getRedisClient();
   const randomString = crypto
